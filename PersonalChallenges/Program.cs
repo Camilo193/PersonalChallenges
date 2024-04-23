@@ -103,3 +103,37 @@ Console.WriteLine(challenge.IsValidHexCode("#CD555f"));
 
 Console.WriteLine(challenge.IsSymmetrical(2112));
 
+List<int> arr = new List<int>() {1, 2, 3, 4, 5};
+var result = challenge.GetAllMixes(arr);
+
+var getCombination = challenge.GetCombination(arr);
+Console.WriteLine("-----------------------------------------");
+
+List<List<int>> matriz = new();
+matriz.Add(new List<int>() { 11, 2, 4 });
+matriz.Add(new List<int>() { 4, 5, 6 });
+matriz.Add(new List<int>() { 10, 8, -12 });
+var diagonalDifference = challenge.diagonalDifference(matriz);
+
+challenge.staircase(6);
+
+Console.WriteLine("");
+
+challenge.TableroDeDamas(7);
+
+challenge.Histograma(new int[] { 1, 2, 1, 3, 3, 1, 2, 1, 5, 1 });
+
+challenge.separateByZero(new List<int>() { 2,1,0,0,3,4});
+
+Console.WriteLine("");
+
+
+Console.WriteLine(challenge.balancedSums(new List<int>() { 1, 2, 3, 3}));
+
+Console.WriteLine(challenge.birthday2(new List<int>() { 1, 2, 1, 3, 2 }, 3, 2));
+
+Console.WriteLine(challenge.divisibleSumPairs(6, 5, new List<int>() { 1, 2, 3, 4, 5, 6 }));
+
+Console.WriteLine(challenge.MigratoryBirds2(new List<int>() { 1, 4, 4, 4, 5, 3, 3, 3 }));
+
+
